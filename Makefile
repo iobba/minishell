@@ -20,11 +20,11 @@ NAME = minishell
 all : ${NAME}
 
 %.o: %.c
-	cc -g  -I/goinfre/iobba/homebrew/opt/readline/include -c $< -o $@
+	cc -g  -I/goinfre/isalhi/homebrew/opt/readline/include -c $< -o $@
 
 ${NAME} : ${OBJS}
 	make -C libft/
-	cc ${OBJS} ${CFLAGS} libft/libft.a  -L/goinfre/iobba/homebrew/opt/readline/lib -lreadline -o ${NAME} 
+	cc ${OBJS} ${CFLAGS} libft/libft.a  -L/goinfre/isalhi/homebrew/opt/readline/lib -lreadline -o ${NAME} 
 
 
 clean :
